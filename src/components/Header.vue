@@ -6,7 +6,9 @@
         <h2 class="logo__subtitle">the way I see the world</h2></router-link
       >
     </div>
-    <nav class="nav" id="nav"><router-link to="/map">Map</router-link>
+    <nav class="nav" id="nav">
+      <router-link to="/pics">Pics</router-link> |
+      <router-link to="/map">Map</router-link>
       |
       <router-link to="/about">About</router-link>
     </nav>
@@ -25,23 +27,28 @@ export default {
   justify-content: space-between;
   align-content: center;
   margin: 1rem auto;
-  width: 80vw;
+  width: 70vw;
 }
 .logo {
   display: flex;
   flex-direction: column;
-  width: 50%;
+  width: 400px;
 
   &__title {
-    align-self: flex-start;
+    text-align: left;
     color: var(--main);
   }
   &__subtitle {
-    align-self: flex-end;
+    text-align: center;
     color: var(--main);
   }
 }
 .nav {
-  font-size: 16px;
+  font-size: 1.4rem;
+  display: flex;
+  align-items: center;
+  & > a {
+    padding: 0 0.5em;
+}
 }
 </style>
