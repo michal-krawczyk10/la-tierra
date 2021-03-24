@@ -1,5 +1,5 @@
 <template>
-  <h1>pics</h1>
+<h1>pics</h1>
 
 </template>
 
