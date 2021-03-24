@@ -1,15 +1,18 @@
 <template>
   <Header />
   <router-view />
+  <Footer />
 </template>
 
 <script>
-import Header from "./components/Header.vue";
+import Header from "./components/Header";
+import Footer from "./components/Footer";
 
 export default {
   name: "App",
   components: {
     Header,
+    Footer,
   },
 };
 </script>
@@ -21,7 +24,9 @@ export default {
 $paprika: "Paprika", cursive;
 $os: "Open Sans", sans-serif;
 //colors
-
+:root {
+  --main: #090446;
+}
 *,
 *:before,
 *:after {
@@ -34,6 +39,7 @@ $os: "Open Sans", sans-serif;
 html {
   box-sizing: border-box;
   font-family: $paprika;
+  color: var(--main);
   line-height: 1.5;
   font-size: 16px;
 }

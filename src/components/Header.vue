@@ -1,11 +1,13 @@
 <template>
   <header class="header">
     <div class="logo">
-      <h1 class="logo__title">mi calles</h1>
-      <h2 class="logo__subtitle">the way I see the world</h2>
+      <router-link to="/"
+        ><h1 class="logo__title">mi calles</h1>
+        <h2 class="logo__subtitle">the way I see the world</h2></router-link
+      >
     </div>
-    <nav class="nav" id="nav">
-      <router-link to="/">Home</router-link> |
+    <nav class="nav" id="nav"><router-link to="/map">Map</router-link>
+      |
       <router-link to="/about">About</router-link>
     </nav>
   </header>
@@ -29,12 +31,14 @@ export default {
   display: flex;
   flex-direction: column;
   width: 50%;
+
   &__title {
-    color: blue;
     align-self: flex-start;
+    color: var(--main);
   }
   &__subtitle {
     align-self: flex-end;
+    color: var(--main);
   }
 }
 .nav {
