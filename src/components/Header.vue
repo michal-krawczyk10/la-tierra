@@ -26,7 +26,7 @@ export default {
   display: flex;
   justify-content: space-between;
   align-content: center;
-  margin: 1rem auto;
+  margin: 2rem auto;
   width: 70vw;
 }
 .logo {

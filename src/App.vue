@@ -15,7 +15,6 @@ export default {
     Footer,
   },
 };
-
 </script>
 
 <style lang="scss">
@@ -26,7 +25,10 @@ $paprika: "Paprika", cursive;
 $os: "Open Sans", sans-serif;
 //colors
 :root {
+  --paprika: "Paprika", cursive;
   --main: #090446;
+  --lite-main: #247ba0;
+  --op-main: #ddfff7;
 }
 *,
 *:before,
@@ -36,12 +38,12 @@ $os: "Open Sans", sans-serif;
   list-style-type: none;
   margin: 0;
   padding: 0;
+  color: var(--main);
 }
 html {
   box-sizing: border-box;
   font-family: $paprika;
-  color: var(--main);
-  line-height: 1.5;
+  line-height: 1.4;
   font-size: 16px;
 }
 </style>

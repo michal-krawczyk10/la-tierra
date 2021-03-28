@@ -1,13 +1,19 @@
 <template>
-  <article class="pic__container">
-    <div class="pic">
-      <img v-bind:src="image" alt="photo taken in {{ location }}" />
-      <div>
-        <h3>{{ location }}</h3>
-        <p>{{ desc }}</p>
+  <article class="pic">
+    <div class="pic__container">
+      <img
+        class="pic__img"
+        v-bind:src="image"
+        alt="photo taken in {{ location }}"
+      />
+      <div class="pic__textbox">
+        <h3 class="pic__loc">{{ location }}</h3>
+        <p class="pic__text">{{ desc }}</p>
+        <button class="btn btn__random" v-on:click="anotherImg()">
+          another photo
+        </button>
       </div>
     </div>
-    <button v-on:click="anotherImg()">another random photo</button>
   </article>
 </template>
 
@@ -39,11 +45,47 @@ export default {
 };
 </script>
 
-<style lang="scss" scoped>
+<style lang="scss">
 .pic {
-  width: 80%;
-  & > img {
+  margin: auto;
+  width: 80vw;
+  &__container {
+    display: flex;
     width: 100%;
+  }
+  &__img {
+    width: 70%;
+    max-width: 800px;
+    margin-right: 2rem;
+  }
+  &__textbox {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+  }
+  &__loc {
+    width: 100%;
+    margin: 1rem 0;
+  }
+  &__text {
+    width: 100%;
+    text-align: justify;
+  }
+}
+.btn {
+  padding: 1rem;
+  font-size: 1rem;
+  font-family: var(--paprika);
+  background: var(--main);
+  color: var(--op-main);
+  border: none;
+  border-radius: 8px;
+  box-shadow: 2px 2px 1px 2px;
+  &__random {
+    margin: 1rem;
+    max-width: 160px;
+    align-self: flex-end;
   }
 }
 </style>
