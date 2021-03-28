@@ -1,11 +1,10 @@
 <template>
-  <div class="frame">
-    <Set />
-  </div>
+  <Set />
 </template>
 
 <script>
 import Set from "./Set";
+
 
 export default {
   name: "Frame",
@@ -22,6 +21,10 @@ export default {
   width: 80%;
   height: 600px;
   border: 1px solid red;
+}
+.img {
+  height: 100px;
+  width: 100px;
 }
 </style>
 
