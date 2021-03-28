@@ -1,5 +1,5 @@
 <template>
-  <footer class="footer">Copyright &copy; 2021</footer>
+  <footer class="footer">Copyright &copy; 2021 by <a href="https://github.com/michal-krawczyk10" title="Michał Krawczyk">Michał Krawczyk</a></footer>
 </template>
 
 <script>

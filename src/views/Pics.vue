@@ -1,6 +1,6 @@
 <template>
   <h2>random picture</h2>
-  <div class="set">
+  <div class="pic">
     <img v-bind:src="image" alt="photo taken in {{ location }}" />
   </div>
 </template>
@@ -20,7 +20,12 @@ export default {
 </script>
 
 <style lang="scss" scoped>
-img {
-  height: 100px;
+.pic {
+  
+  width: 80%;
+  & > img {
+    width: 100%;
+    max-height: 80%;
+  }
 }
 </style>
