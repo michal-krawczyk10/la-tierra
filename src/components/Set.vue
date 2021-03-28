@@ -1,5 +1,5 @@
 <template>
-  <div class="set"><img v-bind:src="image" alt="s" />{{ image }}</div>
+  <div class="set"></div>
 </template>
 
 <script>
@@ -9,7 +9,7 @@ export default {
   name: "Set",
   data() {
     return {
-      image: images[Math.floor(Math.random() * images.length)].url,
+      // image: images[Math.floor(Math.random() * images.length)].url,
     };
   },
 };

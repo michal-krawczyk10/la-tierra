@@ -3,14 +3,14 @@
     <div class="logo">
       <router-link to="/"
         ><h1 class="logo__title">mi calles</h1>
-        <h2 class="logo__subtitle">the way I see the world</h2></router-link
+        <h2 class="logo__subtitle">pictures taken on planet Earth</h2></router-link
       >
     </div>
     <nav class="nav" id="nav">
-      <router-link to="/pics">Pics</router-link> |
-      <router-link to="/map">Map</router-link>
+      <router-link to="/pics">random picture</router-link> |
+      <router-link to="/map">planet map</router-link>
       |
-      <router-link to="/about">About</router-link>
+      <router-link to="/about">about</router-link>
     </nav>
   </header>
 </template>

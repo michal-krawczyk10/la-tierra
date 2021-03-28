@@ -4,7 +4,7 @@ const images = [
 		setName: "",
 		exampleImage:
 			"https://raw.githubusercontent.com/michal-krawczyk10/mi-calles/master/src/assets/img/1/P1520447.jpg",
-		set: [
+		pics: [
 			{
 				imgId: 1001,
 				imgUrl:
@@ -33,7 +33,7 @@ const images = [
 		setName: "test set Name",
 		exampleImage:
 			"https://raw.githubusercontent.com/michal-krawczyk10/mi-calles/master/src/assets/img/2/P1520463.jpg",
-		set: [
+		pics: [
 			{
 				imgId: 2001,
 				imgUrl:
@@ -57,7 +57,7 @@ const images = [
 	// 	setName: "",
 	// 	exampleImage: "",
 
-	// 	set: [
+	// 	pics: [
 	// 		{
 	// 			imgId: "",
 	// 			imgUrl: "",
@@ -67,4 +67,12 @@ const images = [
 	// 	],
 	// },
 ];
-export default images;
+
+const randomSet = images[Math.floor(Math.random() * images.length)];
+const randomPics = randomSet.pics;
+const randomImg = randomPics[Math.floor(Math.random() * randomPics.length)];
+
+// const randomImg = random
+
+export { randomImg };
+export { images };
