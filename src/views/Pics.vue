@@ -86,6 +86,14 @@ export default {
     margin: 1rem;
     max-width: 160px;
     align-self: flex-end;
+    &:hover {
+      background: var(--lite-main);
+      cursor: pointer;
+      outline: none;
+    }
+    &:focus {
+      outline: none;
+    }
   }
 }
 </style>
