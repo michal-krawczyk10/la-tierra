@@ -9,22 +9,22 @@ const images = [
 				imgId: 1001,
 				imgUrl:
 					"https://raw.githubusercontent.com/michal-krawczyk10/mi-calles/master/src/assets/img/1/P1520447.jpg",
-				imgDesc: "test pic",
-				imgLocal: "test local",
+				imgDesc: "test pic 1001",
+				imgLocal: "test local 1001",
 			},
 			{
 				imgId: 1002,
 				imgUrl:
 					"https://raw.githubusercontent.com/michal-krawczyk10/mi-calles/master/src/assets/img/1/P1520452.jpg",
-				imgDesc: "test pic",
-				imgLocal: "test local",
+				imgDesc: "test pic 1002",
+				imgLocal: "test local 1002",
 			},
 			{
 				imgId: 1003,
 				imgUrl:
 					"https://raw.githubusercontent.com/michal-krawczyk10/mi-calles/master/src/assets/img/1/P1520455.jpg",
-				imgDesc: "test pic",
-				imgLocal: "test local",
+				imgDesc: "test pic 1003",
+				imgLocal: "test local 1003",
 			},
 		],
 	},
@@ -38,15 +38,15 @@ const images = [
 				imgId: 2001,
 				imgUrl:
 					"https://raw.githubusercontent.com/michal-krawczyk10/mi-calles/master/src/assets/img/2/P1520463.jpg",
-				imgDesc: "test pic",
-				imgLocal: "test local",
+				imgDesc: "test pic 2001",
+				imgLocal: "test local 2001",
 			},
 			{
 				imgId: 2002,
 				imgUrl:
 					"https://github.com/michal-krawczyk10/mi-calles/blob/master/src/assets/img/2/P1520465.jpg?raw=true",
-				imgDesc: "test pic",
-				imgLocal: "test local",
+				imgDesc: "test pic 2002",
+				imgLocal: "test local 2002",
 			},
 		],
 	},
