@@ -1,5 +1,4 @@
 <template>
-  <h1>test</h1>
   <div class="container"><Frame /></div>
 </template>
 

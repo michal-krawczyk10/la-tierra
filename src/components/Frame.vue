@@ -1,15 +1,19 @@
 <template>
+  <div class="frame"></div>
   <Set />
 </template>
 
 <script>
 import Set from "./Set";
-
+import images from "../images";
 
 export default {
   name: "Frame",
   components: {
     Set,
+  },
+  data() {
+    image: "";
   },
 };
 </script>
