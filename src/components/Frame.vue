@@ -37,28 +37,44 @@ export default {
   justify-content: space-around;
   flex-wrap: wrap-reverse;
   width: 80%;
-  border: 1px solid red;
 }
 .item {
-  border: 1px solid tomato;
   width: 45%;
   max-width: 600px;
   height: 300px;
   margin: 1rem;
+  border-radius: 8px;
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
   &__textbox {
     height: 100%;
-    background-color: rgba(177, 152, 171, 0.246);
+    background-color: rgba(163, 163, 163, 0.246);
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
+    transition: 0.4s;
+    border-radius: 8px;
+    &:hover {
+      background-color: rgba(121, 121, 121, 0.876);
+    }
+    &:hover > h3 {
+      color: #fff;
+    }
+    &:hover > p {
+      color: #fff;
+    }
   }
   &__title {
+    margin: 1rem;
+    transition: 0.4s;
+    color: rgba(255, 255, 255, 0);
   }
   &__text {
+    margin: 1rem;
+    transition: 0.4s;
+    color: rgba(255, 255, 255, 0);
   }
 }
 </style>

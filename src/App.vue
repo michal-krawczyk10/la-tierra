@@ -37,7 +37,6 @@ $os: "Open Sans", sans-serif;
   list-style-type: none;
   margin: 0;
   padding: 0;
-  color: var(--main);
 }
 
 body {
