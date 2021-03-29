@@ -2,7 +2,8 @@ const images = [
 	{
 		setId: 1,
 		setName: "test-set-name-1",
-		exampleImage:
+		setDesc: "test set description 1",
+		exampleImg:
 			"https://raw.githubusercontent.com/michal-krawczyk10/mi-calles/master/src/assets/img/1/P1520447.jpg",
 		pics: [
 			{
@@ -31,7 +32,8 @@ const images = [
 	{
 		setId: 2,
 		setName: "test set name 2",
-		exampleImage:
+		setDesc: "test set description 2",
+		exampleImg:
 			"https://raw.githubusercontent.com/michal-krawczyk10/mi-calles/master/src/assets/img/2/P1520463.jpg",
 		pics: [
 			{
@@ -50,12 +52,60 @@ const images = [
 			},
 		],
 	},
+	{
+		setId: 3,
+		setName: "test set name 3",
+		setDesc: "test set description 3",
+		exampleImg:
+			"https://raw.githubusercontent.com/michal-krawczyk10/mi-calles/master/src/assets/img/2/P1520463.jpg",
+		pics: [
+			{
+				imgId: 3001,
+				imgUrl:
+					"https://raw.githubusercontent.com/michal-krawczyk10/mi-calles/master/src/assets/img/2/P1520463.jpg",
+				imgDesc: "test pic 3001",
+				imgLocal: "test local 3001",
+			},
+			{
+				imgId: 3002,
+				imgUrl:
+					"https://github.com/michal-krawczyk10/mi-calles/blob/master/src/assets/img/2/P1520465.jpg?raw=true",
+				imgDesc: "test pic 3002",
+				imgLocal: "test local 3002",
+			},
+		],
+	},
+	{
+		setId: 4,
+		setName: "test set name 4",
+		setDesc: "test set description 4",
+		exampleImg:
+			"https://raw.githubusercontent.com/michal-krawczyk10/mi-calles/master/src/assets/img/2/P1520463.jpg",
+		pics: [
+			{
+				imgId: 4001,
+				imgUrl:
+					"https://raw.githubusercontent.com/michal-krawczyk10/mi-calles/master/src/assets/img/2/P1520463.jpg",
+				imgDesc: "test pic 4001",
+				imgLocal: "test local 4001",
+			},
+			{
+				imgId: 4002,
+				imgUrl:
+					"https://github.com/michal-krawczyk10/mi-calles/blob/master/src/assets/img/2/P1520465.jpg?raw=true",
+				imgDesc: "test pic 4002",
+				imgLocal: "test local 4002",
+			},
+		],
+	},
+
 
 	// TEMPLATE
 	// {
 	// 	setId: "",
 	// 	setName: "",
-	// 	exampleImage: "",
+	//  setDesc: "",
+	// 	exampleImg: "",
 
 	// 	pics: [
 	// 		{
@@ -74,7 +124,7 @@ const randomImg = randomPics[Math.floor(Math.random() * randomPics.length)];
 
 // const randomImg = random
 
-// const sets = 
+// const sets =
 export { randomImg };
 export { images };
 

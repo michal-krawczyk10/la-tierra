@@ -1,6 +1,5 @@
 <template>
-  <Header />
-  <router-view />
+  <div class="content"><Header /> <router-view /></div>
   <Footer />
 </template>
 
@@ -40,10 +39,20 @@ $os: "Open Sans", sans-serif;
   padding: 0;
   color: var(--main);
 }
-html {
+
+body {
   box-sizing: border-box;
   font-family: $paprika;
   line-height: 1.4;
   font-size: 16px;
+  display: flex;
+  flex-direction: column;
+}
+#app {
+  display: flex;
+  flex-direction: column;
+}
+.content {
+  min-height: calc(100vh - 3rem);
 }
 </style>

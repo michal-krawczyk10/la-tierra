@@ -2,8 +2,10 @@
   <header class="header">
     <div class="logo">
       <router-link to="/"
-        ><h1 class="logo__title">planeta nostra</h1>
-        <h2 class="logo__subtitle">pictures taken on planet Earth</h2></router-link
+        ><h1 class="logo__title">terra nostra</h1>
+        <h2 class="logo__subtitle">
+          pictures taken on planet Earth
+        </h2></router-link
       >
     </div>
     <nav class="nav" id="nav">
@@ -49,6 +51,6 @@ export default {
   align-items: center;
   & > a {
     padding: 0 0.5em;
-}
+  }
 }
 </style>

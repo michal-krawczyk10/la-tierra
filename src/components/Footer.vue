@@ -1,5 +1,5 @@
 <template>
-  <footer class="footer">Copyright &copy; 2021 by <a href="https://github.com/michal-krawczyk10" title="Michał Krawczyk">Michał Krawczyk</a></footer>
+  <footer class="footer">Copyright &copy; 2021 by <a href="https://github.com/michal-krawczyk10" title="link to authorgithub">Michał Krawczyk</a></footer>
 </template>
 
 <script>
@@ -8,13 +8,11 @@ export default {
 };
 </script>
 
-<style lang="scss" scoped>
+<style lang="scss">
 .footer {
-  position: absolute;
-  bottom: 0;
+  
+  padding: 1rem 0;
   width: 100%;
-  height: 3rem;
   text-align: center;
-
 }
 </style>
