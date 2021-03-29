@@ -1,7 +1,7 @@
 const images = [
 	{
-		setID: 1,
-		setName: "",
+		setId: 1,
+		setName: "test-set-name-1",
 		exampleImage:
 			"https://raw.githubusercontent.com/michal-krawczyk10/mi-calles/master/src/assets/img/1/P1520447.jpg",
 		pics: [
@@ -29,8 +29,8 @@ const images = [
 		],
 	},
 	{
-		setID: 2,
-		setName: "test set Name",
+		setId: 2,
+		setName: "test set name 2",
 		exampleImage:
 			"https://raw.githubusercontent.com/michal-krawczyk10/mi-calles/master/src/assets/img/2/P1520463.jpg",
 		pics: [
@@ -53,7 +53,7 @@ const images = [
 
 	// TEMPLATE
 	// {
-	// 	setID: "",
+	// 	setId: "",
 	// 	setName: "",
 	// 	exampleImage: "",
 
@@ -74,5 +74,8 @@ const randomImg = randomPics[Math.floor(Math.random() * randomPics.length)];
 
 // const randomImg = random
 
+// const sets = 
 export { randomImg };
 export { images };
+
+// export { sets };

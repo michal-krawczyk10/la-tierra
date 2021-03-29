@@ -83,9 +83,9 @@ export default {
   border-radius: 8px;
   box-shadow: 2px 2px 1px 2px;
   &__random {
-    margin: 1rem;
+    margin: 1rem 1rem 1rem 0;
     max-width: 160px;
-    align-self: flex-end;
+    align-self: flex-start;
     &:hover {
       background: var(--lite-main);
       cursor: pointer;

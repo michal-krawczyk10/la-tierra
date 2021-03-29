@@ -3,7 +3,7 @@
 </template>
 
 <script>
-import images from "../images";
+// import images from "../images";
 
 export default {
   name: "Set",

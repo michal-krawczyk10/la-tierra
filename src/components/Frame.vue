@@ -1,19 +1,26 @@
 <template>
-  <div class="frame"></div>
-  <Set />
+  <div class="frame">
+    <ul>
+      <li v-for="item in image" v-bind:key="item.setId">
+        <div>{{ item.setName }}</div>
+      </li>
+    </ul>
+  </div>
 </template>
 
 <script>
-import Set from "./Set";
-import images from "../images";
-
+// import Set from "./Set";
+import { images } from "../images";
+console.table(images);
 export default {
   name: "Frame",
   components: {
     Set,
   },
   data() {
-    image: "";
+    return {
+      image: images,
+    };
   },
 };
 </script>
