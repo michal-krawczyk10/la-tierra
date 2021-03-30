@@ -9,7 +9,7 @@
       >
     </div>
     <nav class="nav" id="nav">
-      <router-link to="/pics">random picture</router-link> |
+      <router-link to="/randompic">random picture</router-link> |
       <router-link to="/map">planet map</router-link>
       |
       <router-link to="/about">about</router-link>

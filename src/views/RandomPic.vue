@@ -22,7 +22,7 @@ import { randomImg } from "../images";
 import { images } from "../images";
 
 export default {
-  name: "Pics",
+  name: "RandomPic",
   data() {
     return {
       image: randomImg.imgUrl,

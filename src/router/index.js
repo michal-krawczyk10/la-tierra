@@ -21,9 +21,9 @@ const routes = [
 		name: "Map",
 		component: () => import("../views/Map.vue"),
 	},	{
-		path: "/pics",
-		name: "Pics",
-		component: () => import("../views/Pics.vue"),
+		path: "/RandomPic",
+		name: "RandomPic",
+		component: () => import("../views/RandomPic.vue"),
 	},
 ];
 
