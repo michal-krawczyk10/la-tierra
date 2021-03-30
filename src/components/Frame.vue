@@ -5,11 +5,12 @@
       :style="{ 'background-image': 'url(' + item.exampleImg + ')' }"
       v-for="item in image"
       v-bind:key="item.setId"
-    >
+ 
+    ><router-link :to="item.setName">
       <div class="item__textbox">
         <h3 class="item__title">{{ item.setName }}</h3>
         <p class="item__text">{{ item.setDesc }}</p>
-      </div>
+      </div></router-link>
     </li>
   </ul>
 </template>
@@ -58,6 +59,7 @@ export default {
     border-radius: 8px;
     &:hover {
       background-color: rgba(121, 121, 121, 0.876);
+      cursor: pointer;
     }
     &:hover > h3 {
       color: #fff;

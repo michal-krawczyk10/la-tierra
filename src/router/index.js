@@ -19,11 +19,32 @@ const routes = [
 	{
 		path: "/map",
 		name: "Map",
-		component: () => import("../views/Map.vue"),
-	},	{
-		path: "/RandomPic",
+		component: () => import(/* webpackChunkName: "map" */ "../views/Map.vue"),
+	},
+	{
+		path: "/randompic",
 		name: "RandomPic",
-		component: () => import("../views/RandomPic.vue"),
+		component: () => import(/* webpackChunkName: "randompic" */ "../views/RandomPic.vue"),
+	},
+	{
+		path: "/set1",
+		name: "Set1",
+		component: () => import(/* webpackChunkName: "set1" */ "../views/Set1.vue"),
+	},
+	{
+		path: "/set2",
+		name: "Set2",
+		component: () => import(/* webpackChunkName: "set2" */ "../views/Set2.vue"),
+	},
+	{
+		path: "/set3",
+		name: "Set3",
+		component: () => import(/* webpackChunkName: "set3" */ "../views/Set3.vue"),
+	},
+	{
+		path: "/set4",
+		name: "Set4",
+		component: () => import(/* webpackChunkName: "set4" */ "../views/Set4.vue"),
 	},
 ];
 
