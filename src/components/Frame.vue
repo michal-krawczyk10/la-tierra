@@ -5,12 +5,13 @@
       :style="{ 'background-image': 'url(' + item.exampleImg + ')' }"
       v-for="item in image"
       v-bind:key="item.setId"
- 
-    ><router-link :to="item.setName">
-      <div class="item__textbox">
-        <h3 class="item__title">{{ item.setName }}</h3>
-        <p class="item__text">{{ item.setDesc }}</p>
-      </div></router-link>
+    >
+      <router-link :to="{ name: 'SetDetails', params: { id: item.setId } }">
+        <div class="item__textbox">
+          <h3 class="item__title">{{ item.setName }}</h3>
+          <p class="item__text">{{ item.setDesc }}</p>
+        </div></router-link
+      >
     </li>
   </ul>
 </template>

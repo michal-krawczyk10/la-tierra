@@ -45,6 +45,10 @@ const routes = [
 		path: "/set4",
 		name: "Set4",
 		component: () => import(/* webpackChunkName: "set4" */ "../views/Set4.vue"),
+	},	{
+		path: "/setDetails/:id",
+		name: "SetDetails",
+		component: () => import(/* webpackChunkName: "SetDetails" */ "../views/SetDetails.vue"),
 	},
 ];
 
