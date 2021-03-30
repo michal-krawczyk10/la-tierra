@@ -1,7 +1,7 @@
 const images = [
 	{
 		setId: 1,
-		setName: "set1",
+		setName: "Set1",
 		setDesc: "test set description 1",
 		exampleImg:
 			"https://raw.githubusercontent.com/michal-krawczyk10/mi-calles/master/src/assets/img/1/P1520447.jpg",
@@ -31,7 +31,7 @@ const images = [
 	},
 	{
 		setId: 2,
-		setName: "set2",
+		setName: "Set2",
 		setDesc: "test set description 2",
 		exampleImg:
 			"https://raw.githubusercontent.com/michal-krawczyk10/mi-calles/master/src/assets/img/2/P1520463.jpg",
@@ -54,7 +54,7 @@ const images = [
 	},
 	{
 		setId: 3,
-		setName: "set3",
+		setName: "Set3",
 		setDesc: "test set description 3",
 		exampleImg:
 			"https://raw.githubusercontent.com/michal-krawczyk10/mi-calles/master/src/assets/img/2/P1520463.jpg",
@@ -77,7 +77,7 @@ const images = [
 	},
 	{
 		setId: 4,
-		setName: "set4",
+		setName: "Set4",
 		setDesc: "test set description 4",
 		exampleImg:
 			"https://raw.githubusercontent.com/michal-krawczyk10/mi-calles/master/src/assets/img/2/P1520463.jpg",
