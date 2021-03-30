@@ -1,5 +1,5 @@
 <template>
-  <nav class="nav">
+  <nav class="side-nav">
     <router-link to="/">Home</router-link>
     <router-link to="/Set1">Set1</router-link>
     <router-link to="/Set2">Set2</router-link>
@@ -9,8 +9,11 @@
 </template>
 
 <style lang="scss" scoped>
-.nav {
+.side-nav {
   display: flex;
   flex-direction: column;
+  & a.router-link-exact-active {
+    color: pink;
+  }
 }
 </style>

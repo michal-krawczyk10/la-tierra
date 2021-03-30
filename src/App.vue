@@ -54,4 +54,10 @@ body {
 .content {
   min-height: calc(100vh - 3rem);
 }
+
+.nav {
+  & a.router-link-exact-active {
+    color: green;
+  }
+}
 </style>
