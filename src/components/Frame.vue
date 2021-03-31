@@ -3,10 +3,10 @@
     <li
       class="item"
       :style="{ 'background-image': 'url(' + item.exampleImg + ')' }"
-      v-for="item in image"
+      v-for="item in images"
       v-bind:key="item.setId"
     >
-      <router-link :to="{ name: 'SetDetails', params: { id: item.setId } }">
+      <router-link :to="item.setName">
         <div class="item__textbox">
           <h3 class="item__title">{{ item.setName }}</h3>
           <p class="item__text">{{ item.setDesc }}</p>
@@ -27,7 +27,7 @@ export default {
   },
   data() {
     return {
-      image: images,
+      images,
     };
   },
 };

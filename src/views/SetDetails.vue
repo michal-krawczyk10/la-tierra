@@ -1,8 +1,9 @@
+<!-- this doen't work, i'll leave it to find out why later on -->
+
 <template>
   <section>
     <div>
-      <h3>{{ setId.setName }}</h3>
-      <p>{{ setId.setDesc }}</p>
+      <h3>{{ image.setName }}</h3>
     </div>
   </section>
 </template>
@@ -11,14 +12,13 @@ import { images } from "../images";
 export default {
   data() {
     return {
-      setId: this.$route.params.id,
+      imageId: this.$route.params.id,
     };
   },
   computed: {
-    item() {
-      return images.find((item) => item.id === this.setId);
+    image() {
+      return images.find((image) => image.id === this.imageId);
     },
   },
 };
-console.log(this.setId);
 </script>

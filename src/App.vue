@@ -1,10 +1,11 @@
 <template>
-  <div class="content"><Header /> <router-view /></div>
+  <div class="content"><Header /><GoBack /><router-view /></div>
   <Footer />
 </template>
 
 <script>
 import Header from "./components/Header";
+import GoBack from "./components/GoBack";
 import Footer from "./components/Footer";
 
 export default {
@@ -12,6 +13,7 @@ export default {
   components: {
     Header,
     Footer,
+    GoBack,
   },
 };
 </script>
