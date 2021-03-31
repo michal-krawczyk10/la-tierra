@@ -39,7 +39,6 @@ export default {
       this.image = randomImg.imgUrl;
       this.desc = randomImg.imgDesc;
       this.location = randomImg.imgLocal;
-      console.log(this.location);
     },
   },
 };
