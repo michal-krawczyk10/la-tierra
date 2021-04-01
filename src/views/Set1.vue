@@ -63,14 +63,14 @@ export default {
 };
 </script>
 
-<style lang="scss">
+<style lang="scss" scoped>
 .container {
   display: flex;
   width: 80vw;
   margin: 0 auto;
   border: 1px solid chocolate;
 }
-// .slide {
-// }
-
+img {
+  margin-left: 48px;
+}
 </style>

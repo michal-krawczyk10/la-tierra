@@ -1,14 +1,17 @@
 <template>
   <section class="carousel">
     <slot></slot>
-    <button @click="next" class="next">next</button>
-    <button @click="prev" class="prev">prev</button>
+    <span @click="next" class="arrow arrow__next"><ArrowRight /></span>
+    <span @click="prev" class="arrow arrow__prev"><ArrowLeft /></span>
   </section>
 </template>
 <script>
+import ArrowLeft from "../components/ArrowLeft";
+import ArrowRight from "../components/ArrowRight";
 export default {
-  data() {
-    return {};
+  components: {
+    ArrowLeft,
+    ArrowRight,
   },
   methods: {
     next() {
@@ -24,18 +27,27 @@ export default {
 .carousel {
   position: relative;
   width: 85%;
-  height: 800px;
+  height: 600px;
   overflow: hidden;
   border: 1px dotted blue;
-
-  .next {
-    position: absolute;
-    bottom: 0;
-    right: 0;
+}
+.arrow {
+  &:hover {
+    cursor: pointer;
   }
-  .prev {
+  &:hover svg path {
+    transition: 0.2s;
+    fill: chocolate;
+  }
+  &__next {
     position: absolute;
-    bottom: 0;
+    top: calc(50% - 151px);
+    left: 854px;
+  }
+
+  &__prev {
+    position: absolute;
+    top: calc(50% - 151px);
     left: 0;
   }
 }

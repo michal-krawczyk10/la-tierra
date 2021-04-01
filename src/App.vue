@@ -57,7 +57,7 @@ body {
   flex-direction: column;
 }
 .content {
-  min-height: calc(100vh - 3rem);
+  min-height: calc(100vh - 4rem);
 }
 img {
   width: 800px;
