@@ -16,24 +16,25 @@ export default {
 <style lang="scss" scoped>
 .sidenav {
   border-left: 4px solid pink;
+  font-size: 1.4rem;
   width: 20%;
+  height: 400px;
   display: flex;
   flex-direction: column;
   justify-content: center;
   & a.router-link-exact-active {
     color: rgb(193, 192, 255);
     padding-left: 1rem;
+      box-shadow: 0 4px 0 0 pink;
   }
   &__item {
-    padding: 0.6rem 0.4rem;
+    padding: 0.6rem 0.4rem 0.2rem;
     transition: 0.4s;
     width: 100px;
     &:hover {
-    padding-left: 1rem;
-    border-bottom: 2px solid pink;
-    
-}
-    
-}
+      padding-left: 1rem;
+      box-shadow: 0 4px 0 0 pink;
+    }
+  }
 }
 </style>
