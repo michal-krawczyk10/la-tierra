@@ -27,7 +27,7 @@ export default {
 .carousel {
   position: relative;
   width: 85%;
-  height: 600px;
+  height: 700px;
   overflow: hidden;
   border: 1px dotted blue;
 }
@@ -41,13 +41,13 @@ export default {
   }
   &__next {
     position: absolute;
-    top: calc(50% - 151px);
+    top: calc(150px);
     left: 854px;
   }
 
   &__prev {
     position: absolute;
-    top: calc(50% - 151px);
+    top: 150px;
     left: 0;
   }
 }

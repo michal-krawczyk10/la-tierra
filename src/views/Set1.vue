@@ -11,7 +11,9 @@
       >
         <article class="slide">
           <img :src="slide.imgUrl" />
-          <h3>{{slide.imgLocal}}</h3>
+          <div class="textbox">
+            <h3>{{ slide.imgLocal }}</h3>
+          </div>
         </article>
       </carousel-slide>
     </carousel>
@@ -63,7 +65,7 @@ export default {
 };
 </script>
 
-<style lang="scss" scoped>
+<style lang="scss">
 .container {
   display: flex;
   width: 80vw;
@@ -72,5 +74,8 @@ export default {
 }
 img {
   margin-left: 48px;
+}
+.textbox {
+  margin: 0.5rem 0 0 48px;
 }
 </style>

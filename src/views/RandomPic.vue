@@ -74,7 +74,8 @@ export default {
 }
 .btn__random {
   margin: 1rem 1rem 1rem 0;
-  max-width: 160px;
+  width: 160px;
   align-self: flex-start;
+  height: 2rem;
 }
 </style>
