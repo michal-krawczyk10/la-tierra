@@ -59,7 +59,10 @@ body {
 .content {
   min-height: calc(100vh - 3rem);
 }
-
+img {
+  width: 800px;
+  height: 600px;
+}
 .nav {
   & a.router-link-exact-active {
     color: green;
@@ -80,14 +83,6 @@ body {
   }
   &:focus {
     outline: none;
-  }
-  &__back {
-    background: none;
-    color: var(--main);
-    &:hover {
-      background: none;
-      color: green;
-    }
   }
 }
 </style>

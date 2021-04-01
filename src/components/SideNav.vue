@@ -17,7 +17,7 @@ export default {
 .sidenav {
   border-left: 4px solid pink;
   font-size: 1.4rem;
-  width: 20%;
+  width: 15%;
   height: 400px;
   display: flex;
   flex-direction: column;

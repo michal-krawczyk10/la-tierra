@@ -14,8 +14,8 @@
       |
       <router-link to="/about">about</router-link>
     </nav>
-    <GoBack />
   </header>
+  <GoBack />
 </template>
 
 <script>
@@ -26,12 +26,12 @@ export default {
 };
 </script>
 
-<style scoped lang="scss">
+<style lang="scss">
 .header {
   display: flex;
   justify-content: space-between;
   align-content: center;
-  margin: 2rem auto;
+  margin: 2rem auto 0.4rem;
   width: 70vw;
   border: 1px solid blue;
 }
@@ -57,4 +57,5 @@ export default {
     padding: 0 0.5em;
   }
 }
+
 </style>

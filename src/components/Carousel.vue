@@ -1,10 +1,8 @@
 <template>
-  <section>
-    <div class="carousel">
-      <slot></slot>
-      <button @click="next" class="next">next</button>
-      <button @click="prev" class="prev">prev</button>
-    </div>
+  <section class="carousel">
+    <slot></slot>
+    <button @click="next" class="next">next</button>
+    <button @click="prev" class="prev">prev</button>
   </section>
 </template>
 <script>
@@ -25,9 +23,11 @@ export default {
 <style lang="scss">
 .carousel {
   position: relative;
-  width: 300px;
-  height: 300px;
+  width: 85%;
+  height: 800px;
   overflow: hidden;
+  border: 1px dotted blue;
+
   .next {
     position: absolute;
     bottom: 0;

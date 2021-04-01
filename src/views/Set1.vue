@@ -4,13 +4,14 @@
     <carousel v-on:next="next" v-on:prev="prev">
       <carousel-slide
         v-for="(slide, index) in slides"
-        :key="slide"
+        :key="slide.imgId"
         :index="index"
         :visibleSlide="visibleSlide"
         :direction="direction"
       >
-        <article>
+        <article class="slide">
           <img :src="slide.imgUrl" />
+          <h3>{{slide.imgLocal}}</h3>
         </article>
       </carousel-slide>
     </carousel>
@@ -69,9 +70,7 @@ export default {
   margin: 0 auto;
   border: 1px solid chocolate;
 }
+// .slide {
+// }
 
-img {
-  width: 300px;
-  height: 300px;
-}
 </style>
