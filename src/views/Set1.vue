@@ -1,27 +1,30 @@
 <template>
   <div class="container">
-    <TheNavigation />
-    <carousel>
+    <SideNav />
+    <carousel v-on:next="next" v-on:prev="prev">
       <carousel-slide
         v-for="(slide, index) in slides"
         :key="slide"
         :index="index"
         :visibleSlide="visibleSlide"
+        :direction="direction"
       >
-        <img :src="slide.imgUrl" />
+        <article>
+          <img :src="slide.imgUrl" />
+        </article>
       </carousel-slide>
     </carousel>
   </div>
 </template>
 <script>
-import TheNavigation from "@/components/TheNavigation";
+import SideNav from "@/components/SideNav";
 import { images } from "../images";
 import Carousel from "../components/Carousel.vue";
 import CarouselSlide from "../components/CarouselSlide.vue";
 
 export default {
   components: {
-    TheNavigation,
+    SideNav,
     Carousel,
     CarouselSlide,
   },
@@ -30,17 +33,45 @@ export default {
       images,
       slides: images[0].pics,
       visibleSlide: 0,
+      direction: "left",
     };
+  },
+  computed: {
+    slidesLength() {
+      return this.slides.length;
+    },
+  },
+  methods: {
+    next() {
+      if (this.visibleSlide >= this.slidesLength - 1) {
+        this.visibleSlide = 0;
+      } else {
+        this.visibleSlide++;
+      }
+      this.direction = "left";
+    },
+    prev() {
+      if (this.visibleSlide <= 0) {
+        this.visibleSlide = this.slidesLength - 1;
+      } else {
+        this.visibleSlide--;
+      }
+      this.direction = "right";
+    },
   },
 };
 </script>
 
-<style lang="scss" scoped>
+<style lang="scss">
 .container {
   display: flex;
+  width: 80vw;
+  margin: 0 auto;
+  border: 1px solid chocolate;
 }
 
 img {
-  width: 100px;
+  width: 300px;
+  height: 300px;
 }
 </style>

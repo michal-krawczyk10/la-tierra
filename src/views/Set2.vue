@@ -1,12 +1,12 @@
 <template>
-  <TheNavigation />
+  <SideNav />
 </template>
 <script>
-import TheNavigation from "@/components/TheNavigation";
+import SideNav from "@/components/SideNav";
 
 export default {
   components: {
-    TheNavigation,
+    SideNav,
   },
 };
 </script>

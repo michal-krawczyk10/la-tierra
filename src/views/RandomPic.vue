@@ -72,27 +72,9 @@ export default {
     text-align: justify;
   }
 }
-.btn {
-  padding: 1rem;
-  font-size: 1rem;
-  font-family: var(--paprika);
-  background: var(--main);
-  color: var(--op-main);
-  border: none;
-  border-radius: 8px;
-  box-shadow: 2px 2px 1px 2px;
-  &__random {
-    margin: 1rem 1rem 1rem 0;
-    max-width: 160px;
-    align-self: flex-start;
-    &:hover {
-      background: var(--lite-main);
-      cursor: pointer;
-      outline: none;
-    }
-    &:focus {
-      outline: none;
-    }
-  }
+.btn__random {
+  margin: 1rem 1rem 1rem 0;
+  max-width: 160px;
+  align-self: flex-start;
 }
 </style>

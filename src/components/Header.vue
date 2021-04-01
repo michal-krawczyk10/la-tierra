@@ -14,12 +14,15 @@
       |
       <router-link to="/about">about</router-link>
     </nav>
+    <GoBack />
   </header>
 </template>
 
 <script>
+import GoBack from "../components/GoBack";
 export default {
   name: "Header",
+  components: { GoBack },
 };
 </script>
 
@@ -30,6 +33,7 @@ export default {
   align-content: center;
   margin: 2rem auto;
   width: 70vw;
+  border: 1px solid blue;
 }
 .logo {
   display: flex;

@@ -1,11 +1,10 @@
 <template>
-  <div class="content"><Header /><GoBack /><router-view /></div>
+  <div class="content"><Header /><router-view /></div>
   <Footer />
 </template>
 
 <script>
 import Header from "./components/Header";
-import GoBack from "./components/GoBack";
 import Footer from "./components/Footer";
 
 export default {
@@ -13,23 +12,25 @@ export default {
   components: {
     Header,
     Footer,
-    GoBack,
   },
 };
 </script>
 
 <style lang="scss">
 @import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@600&family=Paprika&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600&display=swap");
 
 //fonts
 $paprika: "Paprika", cursive;
 $os: "Open Sans", sans-serif;
+$montserrat: "Montserrat", sans-serif;
 //colors
 :root {
   --paprika: "Paprika", cursive;
+  --montserrat: "Montserrat", sans-serif;
   --main: #090446;
   --lite-main: #247ba0;
-  --op-main: #ddfff7;
+  --op-main: #f8f0fb;
 }
 *,
 *:before,
@@ -43,11 +44,13 @@ $os: "Open Sans", sans-serif;
 
 body {
   box-sizing: border-box;
-  font-family: $paprika;
+  font-family: $montserrat;
+  font-weight: 600;
   line-height: 1.4;
   font-size: 16px;
   display: flex;
   flex-direction: column;
+  background: var(--op-main);
 }
 #app {
   display: flex;
@@ -60,6 +63,31 @@ body {
 .nav {
   & a.router-link-exact-active {
     color: green;
+  }
+}
+.btn {
+  font-size: 1rem;
+  font-family: var(--paprika);
+  background: var(--main);
+  color: #fff;
+  border: none;
+  border-radius: 8px;
+  transition: 0.2s;
+  &:hover {
+    background: var(--lite-main);
+    cursor: pointer;
+    outline: none;
+  }
+  &:focus {
+    outline: none;
+  }
+  &__back {
+    background: none;
+    color: var(--main);
+    &:hover {
+      background: none;
+      color: green;
+    }
   }
 }
 </style>

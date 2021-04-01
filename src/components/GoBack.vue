@@ -1,5 +1,5 @@
 <template>
-  <button @click="goBack">go back</button>
+  <button class="btn btn__back" @click="goBack">go back</button>
 </template>
 <script>
 export default {
