@@ -1,10 +1,10 @@
 <template>
   <nav class="sidenav">
     <router-link class="sidenav__item" to="/">Home</router-link>
-    <router-link class="sidenav__item" to="/Set1">Set1</router-link>
-    <router-link class="sidenav__item" to="/Set2">Set2</router-link>
-    <router-link class="sidenav__item" to="/Set3">Set3</router-link>
-    <router-link class="sidenav__item" to="/Set4">Set4</router-link>
+    <router-link class="sidenav__item" to="/Animals">Animals</router-link>
+    <router-link class="sidenav__item" to="/Landscapes">Landscapes</router-link>
+    <router-link class="sidenav__item" to="/People">People</router-link>
+    <router-link class="sidenav__item" to="/Cities">Cities</router-link>
   </nav>
 </template>
 <script>
@@ -25,7 +25,7 @@ export default {
   & a.router-link-exact-active {
     color: rgb(193, 192, 255);
     padding-left: 1rem;
-      box-shadow: 0 4px 0 0 pink;
+    box-shadow: 0 4px 0 0 pink;
   }
   &__item {
     padding: 0.6rem 0.4rem 0.2rem;

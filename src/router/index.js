@@ -28,24 +28,28 @@ const routes = [
 			import(/* webpackChunkName: "randompic" */ "../views/RandomPic.vue"),
 	},
 	{
-		path: "/set1",
-		name: "Set1",
-		component: () => import(/* webpackChunkName: "set1" */ "../views/Set1.vue"),
+		path: "/Animals",
+		name: "Animals",
+		component: () =>
+			import(/* webpackChunkName: "Animals" */ "../views/Animals.vue"),
 	},
 	{
-		path: "/set2",
-		name: "Set2",
-		component: () => import(/* webpackChunkName: "set2" */ "../views/Set2.vue"),
+		path: "/Landscapes",
+		name: "Landscapes",
+		component: () =>
+			import(/* webpackChunkName: "Landscapes" */ "../views/Landscapes.vue"),
 	},
 	{
-		path: "/set3",
-		name: "Set3",
-		component: () => import(/* webpackChunkName: "set3" */ "../views/Set3.vue"),
+		path: "/People",
+		name: "People",
+		component: () =>
+			import(/* webpackChunkName: "People" */ "../views/People.vue"),
 	},
 	{
-		path: "/set4",
-		name: "Set4",
-		component: () => import(/* webpackChunkName: "set4" */ "../views/Set4.vue"),
+		path: "/Cities",
+		name: "Cities",
+		component: () =>
+			import(/* webpackChunkName: "Cities" */ "../views/Cities.vue"),
 	},
 	{
 		path: "/setDetails/:id",

@@ -1,60 +1,95 @@
 const images = [
 	{
 		setId: 1,
-		setName: "Set1",
-		setDesc: "test set description 1",
+		setName: "animals",
+		setDesc: "portraits of our distant relatives",
 		exampleImg:
-			"https://raw.githubusercontent.com/michal-krawczyk10/mi-calles/master/src/assets/img/1/P1520447.jpg",
+			"https://github.com/michal-krawczyk10/mi-calles/blob/master/src/assets/img/animals/P1510716.jpg?raw=true",
 		pics: [
 			{
 				imgId: 1001,
 				imgUrl:
-					"https://raw.githubusercontent.com/michal-krawczyk10/mi-calles/master/src/assets/img/1/P1520447.jpg",
-				imgDesc: "test pic 1001",
-				imgLocal: "test local 1001",
+					"https://github.com/michal-krawczyk10/mi-calles/blob/master/src/assets/img/animals/P1020650.jpg?raw=true",
+				imgDesc: "highland cow",
+				imgLocal: "Scotland",
 			},
 			{
 				imgId: 1002,
 				imgUrl:
-					"https://raw.githubusercontent.com/michal-krawczyk10/mi-calles/master/src/assets/img/1/P1520452.jpg",
-				imgDesc: "test pic 1002",
-				imgLocal: "test local 1002",
+					"https://github.com/michal-krawczyk10/mi-calles/blob/master/src/assets/img/animals/038.jpg?raw=true",
+				imgDesc: "toucan",
+				imgLocal: "Brazil",
 			},
 			{
 				imgId: 1003,
 				imgUrl:
-					"https://raw.githubusercontent.com/michal-krawczyk10/mi-calles/master/src/assets/img/1/P1520455.jpg",
-				imgDesc: "test pic 1003",
-				imgLocal: "test local 1003",
+					"https://github.com/michal-krawczyk10/mi-calles/blob/master/src/assets/img/animals/P1210773.jpg?raw=true",
+				imgDesc: "magellanic penguin",
+				imgLocal: "Chile",
+			},
+			{
+				imgId: 1004,
+				imgUrl:
+					"https://github.com/michal-krawczyk10/mi-calles/blob/master/src/assets/img/animals/P1300936.jpg?raw=true",
+				imgDesc: "monkey",
+				imgLocal: "Bolivia",
+			},
+			{
+				imgId: 1005,
+				imgUrl:
+					"https://github.com/michal-krawczyk10/mi-calles/blob/master/src/assets/img/animals/P1310437.jpg?raw=true",
+				imgDesc: "llamas",
+				imgLocal: "Bolivia",
+			},
+			{
+				imgId: 1006,
+				imgUrl:
+					"https://github.com/michal-krawczyk10/mi-calles/blob/master/src/assets/img/animals/P1390286.jpg?raw=true",
+				imgDesc: "sea lion",
+				imgLocal: "Peru",
+			},
+			{
+				imgId: 1007,
+				imgUrl:
+					"https://github.com/michal-krawczyk10/mi-calles/blob/master/src/assets/img/animals/P1400356.jpg?raw=true",
+				imgDesc: "horse",
+				imgLocal: "Colombia",
+			},
+			{
+				imgId: 1007,
+				imgUrl:
+					"https://github.com/michal-krawczyk10/mi-calles/blob/master/src/assets/img/animals/P1510716.jpg?raw=true",
+				imgDesc: "cat",
+				imgLocal: "Croatia",
 			},
 		],
 	},
 	{
 		setId: 2,
-		setName: "Set2",
-		setDesc: "test set description 2",
+		setName: "landscapes",
+		setDesc: "beauty of our planet",
 		exampleImg:
-			"https://raw.githubusercontent.com/michal-krawczyk10/mi-calles/master/src/assets/img/2/P1520463.jpg",
+			"https://github.com/michal-krawczyk10/mi-calles/blob/master/src/assets/img/landscapes/P1380109.jpg?raw=true",
 		pics: [
 			{
 				imgId: 2001,
 				imgUrl:
-					"https://raw.githubusercontent.com/michal-krawczyk10/mi-calles/master/src/assets/img/2/P1520463.jpg",
-				imgDesc: "test pic 2001",
-				imgLocal: "test local 2001",
+					"https://github.com/michal-krawczyk10/mi-calles/blob/master/src/assets/img/landscapes/P1380109.jpg?raw=true",
+				imgDesc: "Salkantay Trail",
+				imgLocal: "Peru",
 			},
 			{
 				imgId: 2002,
 				imgUrl:
-					"https://github.com/michal-krawczyk10/mi-calles/blob/master/src/assets/img/2/P1520465.jpg?raw=true",
-				imgDesc: "test pic 2002",
-				imgLocal: "test local 2002",
+					"https://github.com/michal-krawczyk10/mi-calles/blob/master/src/assets/img/landscapes/1.jpg?raw=true",
+				imgDesc: "Iguaçu Falls",
+				imgLocal: "Brazil / Argentina",
 			},
 		],
 	},
 	{
 		setId: 3,
-		setName: "Set3",
+		setName: "people",
 		setDesc: "test set description 3",
 		exampleImg:
 			"https://raw.githubusercontent.com/michal-krawczyk10/mi-calles/master/src/assets/img/2/P1520463.jpg",
@@ -77,7 +112,7 @@ const images = [
 	},
 	{
 		setId: 4,
-		setName: "Set4",
+		setName: "cities",
 		setDesc: "test set description 4",
 		exampleImg:
 			"https://raw.githubusercontent.com/michal-krawczyk10/mi-calles/master/src/assets/img/2/P1520463.jpg",
@@ -98,7 +133,6 @@ const images = [
 			},
 		],
 	},
-
 
 	// TEMPLATE
 	// {

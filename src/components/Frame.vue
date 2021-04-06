@@ -17,7 +17,7 @@
 </template>
 
 <script>
-// import Set from "./Set";
+
 import { images } from "../images";
 
 export default {
