@@ -8,17 +8,30 @@
 <script>
 import ArrowLeft from "../components/ArrowLeft";
 import ArrowRight from "../components/ArrowRight";
+
 export default {
   components: {
     ArrowLeft,
     ArrowRight,
   },
+  //for global keyboard event:
+  mounted() {
+    document.addEventListener("keyup", this.keyUp);
+  },
+  //;
   methods: {
     next() {
       this.$emit("next");
     },
     prev() {
       this.$emit("prev");
+    },
+    keyUp() {
+      if (event.keyCode === 37) {
+        this.prev();
+      } else if (event.keyCode === 39) {
+        this.next();
+      }
     },
   },
 };
