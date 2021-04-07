@@ -8,10 +8,12 @@
         </h2></router-link
       >
     </div>
-    <nav v-bind="{ active: isActive }" class="nav" id="nav">
-      <router-link to="/randompic">random pic</router-link>
+    <nav class="nav" id="nav" v-bind:class="{ nav__show: isActive }">
+      <router-link to="/randompic" @click="isActive = !isActive"
+        >random pic</router-link
+      >
       <span class="break">|</span>
-      <router-link to="/about">about</router-link>
+      <router-link to="/about" @click="isActive = !isActive">about</router-link>
     </nav>
     <span class="ham" @click="isActive = !isActive"
       ><span class="ham__line"></span><span class="ham__line"></span
@@ -25,8 +27,10 @@
 import GoBack from "../components/GoBack";
 export default {
   name: "Header",
-  data: {
-    isActive: false,
+  data() {
+    return {
+      isActive: false,
+    };
   },
   components: { GoBack },
 };
@@ -109,7 +113,10 @@ export default {
     }
   }
   &__show {
-    right: 0;
+    @media screen and (max-width: 768px) {
+      position: absolute;
+      right: 0;
+    }
   }
 }
 .ham {
