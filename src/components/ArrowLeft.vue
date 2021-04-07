@@ -18,6 +18,3 @@ export default {
   name: "ArrowLeft",
 };
 </script>
-<style lang="scss">
-
-</style>

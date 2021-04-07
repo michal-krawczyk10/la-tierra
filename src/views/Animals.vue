@@ -73,7 +73,7 @@ export default {
   border: 1px solid chocolate;
 }
 img {
-  margin-left: 48px;
+  margin-left: 60px;
 }
 .textbox {
   margin: 0.5rem 0 0 48px;

@@ -61,7 +61,6 @@ body {
 }
 img {
   width: 800px;
-  height: 600px;
 }
 .nav {
   & a.router-link-exact-active {

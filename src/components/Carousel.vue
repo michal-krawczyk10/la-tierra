@@ -26,12 +26,13 @@ export default {
 <style lang="scss">
 .carousel {
   position: relative;
-  width: 85%;
+  width: 920px;
   height: 700px;
   overflow: hidden;
   border: 1px dotted blue;
 }
 .arrow {
+  width: 60px;
   &:hover {
     cursor: pointer;
   }
@@ -42,7 +43,8 @@ export default {
   &__next {
     position: absolute;
     top: calc(150px);
-    left: 854px;
+    left: 860px;
+    padding-left: 16px;
   }
 
   &__prev {

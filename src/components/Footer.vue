@@ -10,7 +10,6 @@ export default {
 
 <style lang="scss">
 .footer {
-  
   padding: 1rem 0;
   width: 100%;
   text-align: center;
