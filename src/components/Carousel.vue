@@ -1,18 +1,27 @@
 <template>
   <section class="carousel">
-    <slot></slot>
-    <span @click="next" class="arrow arrow__next"><ArrowRight /></span>
-    <span @click="prev" class="arrow arrow__prev"><ArrowLeft /></span>
+    <slot></slot
+    ><span class="arrows">
+      <span @click="next" class="arrow arrow__next"><ArrowRight /></span>
+      <span @click="prev" class="arrow arrow__prev"><ArrowLeft /></span></span
+    ><span class="arrows__sm">
+      <span @click="prev" class="arrow__sm"><ArrowLeftSm /></span>
+      <span @click="next" class="arrow__sm"><ArrowRightSm /></span
+    ></span>
   </section>
 </template>
 <script>
 import ArrowLeft from "../components/ArrowLeft";
 import ArrowRight from "../components/ArrowRight";
+import ArrowLeftSm from "../components/ArrowLeftSm";
+import ArrowRightSm from "../components/ArrowRightSm";
 
 export default {
   components: {
     ArrowLeft,
     ArrowRight,
+    ArrowLeftSm,
+    ArrowRightSm,
   },
   //for global keyboard event:
   mounted() {
@@ -42,9 +51,26 @@ export default {
   width: 920px;
   height: 700px;
   overflow: hidden;
-
   @media screen and (max-width: 1220px) {
     width: 740px;
+  }
+  @media screen and (max-width: 768px) {
+    width: 100%;
+  }
+}
+.arrows {
+  @media screen and (max-width: 768px) {
+    display: none;
+  }
+  &__sm {
+    position: absolute;
+    top: 580px;
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    @media screen and (min-width: 769px) {
+      display: none;
+    }
   }
 }
 .arrow {
@@ -76,11 +102,24 @@ export default {
     position: absolute;
     left: 0;
   }
+  &__sm {
+    min-width: 140px;
+    &:hover {
+      cursor: pointer;
+    }
+    &:hover svg path {
+      transition: 0.2s;
+      fill: chocolate;
+    }
+  }
 }
 img {
   margin-left: 60px;
   @media screen and (max-width: 1220px) {
     margin-left: 50px;
+  }
+  @media screen and (max-width: 768px) {
+    margin-left: 0;
   }
 }
 </style>

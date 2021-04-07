@@ -1,0 +1,20 @@
+<template>
+  <svg
+    width="131"
+    height="61"
+    viewBox="0 0 131 61"
+    fill="none"
+    xmlns="http://www.w3.org/2000/svg"
+  >
+    <path
+      d="M1 30.5L130 1V6.9L32.0253 30.5L130 54.1V60L1 30.5Z"
+      fill="#090446"
+      stroke="black"
+    />
+  </svg>
+</template>
+<script>
+export default {
+  name: "ArrowLeftSm",
+};
+</script>

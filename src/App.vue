@@ -69,6 +69,9 @@ img {
   @media screen and (max-width: 1220px) {
     width: 640px;
   }
+  @media screen and (max-width: 768px) {
+    width: 100%;
+  }
 }
 .nav {
   & a.router-link-exact-active {
