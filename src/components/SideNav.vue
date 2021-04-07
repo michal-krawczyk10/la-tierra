@@ -15,7 +15,7 @@ export default {
 
 <style lang="scss" scoped>
 .sidenav {
-  border-left: 4px solid pink;
+  border-left: 4px solid var(--main);
   font-size: 1.4rem;
   width: 15%;
   height: 400px;
@@ -29,9 +29,9 @@ export default {
     display: none;
   }
   & a.router-link-exact-active {
-    color: rgb(193, 192, 255);
+    color: var(--lt-main);
     padding-left: 1rem;
-    box-shadow: 0 4px 0 0 pink;
+    box-shadow: 0 4px 0 0 var(--lt-main);
   }
   &__item {
     padding: 0.6rem 0.4rem 0.2rem;
@@ -39,7 +39,8 @@ export default {
     width: 100px;
     &:hover {
       padding-left: 1rem;
-      box-shadow: 0 4px 0 0 pink;
+      color: var(--lt-main);
+      box-shadow: 0 4px 0 0 var(--lt-main);
     }
   }
 }

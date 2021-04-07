@@ -8,8 +8,8 @@
   >
     <path
       d="M130 30.5L1 1V6.9L98.9747 30.5L1 54.1V60L130 30.5Z"
-      fill="#090446"
-      stroke="black"
+      fill="#440d3d"
+      stroke="#440d3d"
     />
   </svg>
 </template>

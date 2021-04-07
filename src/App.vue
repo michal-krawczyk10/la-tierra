@@ -28,9 +28,9 @@ $montserrat: "Montserrat", sans-serif;
 :root {
   --paprika: "Paprika", cursive;
   --montserrat: "Montserrat", sans-serif;
-  --main: #090446;
-  --lite-main: #247ba0;
-  --op-main: #f8f0fb;
+  --main: #440d3d;
+  --lt-main: #e63462;
+  --op-main: #f6f8ff;
   // media queries
   // --xl: 1600px;
   // --lg: 1440px;
@@ -45,6 +45,7 @@ $montserrat: "Montserrat", sans-serif;
   list-style-type: none;
   margin: 0;
   padding: 0;
+  color: var(--main);
 }
 
 body {
@@ -55,6 +56,7 @@ body {
   font-size: 16px;
   display: flex;
   flex-direction: column;
+
   background: var(--op-main);
 }
 #app {
@@ -75,7 +77,7 @@ img {
 }
 .nav {
   & a.router-link-exact-active {
-    color: green;
+    color: var(--lt-main);
   }
 }
 .btn {
@@ -85,9 +87,9 @@ img {
   color: #fff;
   border: none;
   border-radius: 8px;
-  transition: 0.2s;
+  transition: 0.3s;
   &:hover {
-    background: var(--lite-main);
+    background: var(--lt-main);
     cursor: pointer;
     outline: none;
   }

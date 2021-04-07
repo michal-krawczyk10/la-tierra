@@ -8,8 +8,8 @@
   >
     <path
       d="M1.5 151L41 1V31L11 151L41 271V301L1.5 151Z"
-      fill="#090446"
-      stroke="black"
+      fill="#440d3d"
+      stroke="#440d3d"
     />
   </svg>
 </template>

@@ -24,7 +24,7 @@ export default {
 </script>
 <style lang="scss" scoped>
 .back {
-  width: 70%;
+  width: 60%;
   margin: 0 auto 1rem;
   display: flex;
   justify-content: flex-end;
@@ -35,7 +35,7 @@ export default {
   color: var(--main);
   &:hover {
     background: none;
-    color: green;
+    color: var(--lt-main);
   }
 }
 </style>

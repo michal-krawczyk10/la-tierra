@@ -3,8 +3,9 @@
     <slot></slot
     ><span class="arrows">
       <span @click="next" class="arrow arrow__next"><ArrowRight /></span>
-      <span @click="prev" class="arrow arrow__prev"><ArrowLeft /></span></span
-    ><span class="arrows__sm">
+      <span @click="prev" class="arrow arrow__prev"><ArrowLeft /></span
+    ></span>
+    <span class="arrows__sm">
       <span @click="prev" class="arrow__sm"><ArrowLeftSm /></span>
       <span @click="next" class="arrow__sm"><ArrowRightSm /></span
     ></span>
@@ -86,8 +87,8 @@ export default {
     cursor: pointer;
   }
   &:hover svg path {
-    transition: 0.2s;
-    fill: chocolate;
+    transition: 0.3s;
+    fill: var(--lt-main);
   }
   &__next {
     position: absolute;
@@ -109,7 +110,7 @@ export default {
     }
     &:hover svg path {
       transition: 0.2s;
-      fill: chocolate;
+      fill: var(--lt-main);
     }
   }
 }

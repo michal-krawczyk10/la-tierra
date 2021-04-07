@@ -71,7 +71,6 @@ export default {
   display: flex;
   width: 80%;
   margin: 0 auto;
-  border: 1px solid rgb(107, 58, 23);
   @media screen and (min-width: 1600px) {
     width: 70%;
   }
