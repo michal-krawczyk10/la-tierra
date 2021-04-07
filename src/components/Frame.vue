@@ -17,7 +17,6 @@
 </template>
 
 <script>
-
 import { images } from "../images";
 
 export default {
@@ -36,15 +35,15 @@ export default {
 <style lang="scss" scoped>
 .frame {
   display: flex;
-  justify-content: space-around;
+  justify-content: center;
   flex-wrap: wrap-reverse;
   width: 80%;
 }
 .item {
-  width: 45%;
-  max-width: 600px;
+  width: 40%;
+  max-width: 500px;
   height: 300px;
-  margin: 1rem;
+  margin: 2rem;
   border-radius: 8px;
   background-repeat: no-repeat;
   background-position: center;

@@ -12,7 +12,8 @@
         <article class="slide">
           <img :src="slide.imgUrl" />
           <div class="textbox">
-            <h3>{{ slide.imgLocal }}</h3>
+            <h3>{{ slide.imgDesc }}</h3>
+            <p>{{ slide.imgLocal }}</p>
           </div>
         </article>
       </carousel-slide>
@@ -65,17 +66,25 @@ export default {
 };
 </script>
 
-<style lang="scss">
+<style lang="scss" scoped>
 .container {
   display: flex;
-  width: 80vw;
+  width: 80%;
   margin: 0 auto;
-  border: 1px solid chocolate;
+  border: 1px solid rgb(107, 58, 23);
+  @media screen and (min-width: 1600px) {
+    width: 70%;
+  }
+  @media screen and (max-width: 1440px) {
+    width: 90%;
+  }
+  @media screen and (max-width: 1024px) {
+    width: 100%;
+    justify-content: center;
+  }
 }
-img {
-  margin-left: 60px;
-}
+
 .textbox {
-  margin: 0.5rem 0 0 48px;
+  margin: 0.5rem 0 0 72px;
 }
 </style>

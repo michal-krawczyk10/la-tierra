@@ -31,6 +31,11 @@ $montserrat: "Montserrat", sans-serif;
   --main: #090446;
   --lite-main: #247ba0;
   --op-main: #f8f0fb;
+  // media queries
+  // --xl: 1600px;
+  // --lg: 1440px;
+  // --md: 1024px;
+  // --sm: 768px;
 }
 *,
 *:before,
@@ -60,7 +65,10 @@ body {
   min-height: calc(100vh - 4rem);
 }
 img {
-  width: 800px;
+  max-width: 800px;
+  @media screen and (max-width: 1220px) {
+    width: 640px;
+  }
 }
 .nav {
   & a.router-link-exact-active {

@@ -22,6 +22,12 @@ export default {
   display: flex;
   flex-direction: column;
   justify-content: center;
+  @media screen and (max-width: 1220px) {
+    width: 17%;
+  }
+  @media screen and (max-width: 1024px) {
+    display: none;
+  }
   & a.router-link-exact-active {
     color: rgb(193, 192, 255);
     padding-left: 1rem;

@@ -29,10 +29,20 @@ export default {
   width: 920px;
   height: 700px;
   overflow: hidden;
-  border: 1px dotted blue;
+
+  @media screen and (max-width: 1220px) {
+    width: 740px;
+  }
 }
 .arrow {
   width: 60px;
+  height: 640px;
+  display: flex;
+  align-items: center;
+  @media screen and (max-width: 1220px) {
+    height: 480px;
+    width: 50px;
+  }
   &:hover {
     cursor: pointer;
   }
@@ -42,15 +52,22 @@ export default {
   }
   &__next {
     position: absolute;
-    top: calc(150px);
     left: 860px;
     padding-left: 16px;
+    @media screen and (max-width: 1220px) {
+      padding-left: 8px;
+      left: 690px;
+    }
   }
-
   &__prev {
     position: absolute;
-    top: 150px;
     left: 0;
+  }
+}
+img {
+  margin-left: 60px;
+  @media screen and (max-width: 1220px) {
+    margin-left: 50px;
   }
 }
 </style>
