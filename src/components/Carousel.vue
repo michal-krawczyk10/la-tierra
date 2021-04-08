@@ -46,17 +46,26 @@ export default {
   },
 };
 </script>
-<style lang="scss">
+<style lang="scss" >
 .carousel {
   position: relative;
   width: 920px;
-  height: 700px;
+  height: 740px;
   overflow: hidden;
   @media screen and (max-width: 1220px) {
     width: 740px;
   }
   @media screen and (max-width: 768px) {
+    width: 80%;
+    height: 85vw;
+  }
+  @media screen and (max-width: 550px) {
+    width: 90%;
+    height: 100vw;
+  }
+  @media screen and (max-width: 450px) {
     width: 100%;
+    height: 120vw;
   }
 }
 .arrows {
@@ -65,7 +74,7 @@ export default {
   }
   &__sm {
     position: absolute;
-    top: 580px;
+    bottom: 0;
     width: 100%;
     display: flex;
     justify-content: space-around;
@@ -104,7 +113,6 @@ export default {
     left: 0;
   }
   &__sm {
-    min-width: 140px;
     &:hover {
       cursor: pointer;
     }

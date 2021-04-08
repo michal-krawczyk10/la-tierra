@@ -18,3 +18,10 @@ export default {
   name: "ArrowLeftSm",
 };
 </script>
+<style lang="scss" scoped>
+svg {
+  @media screen and (max-width: 550px) {
+    width: 100px;
+  }
+}
+</style>

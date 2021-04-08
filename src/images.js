@@ -2,7 +2,7 @@ const images = [
 	{
 		setId: 1,
 		setName: "animals",
-		setDesc: "portraits of our distant relatives",
+		setDesc: "portraits of our relatives",
 		exampleImg:
 			"https://github.com/michal-krawczyk10/mi-calles/blob/master/src/assets/img/animals/P1510716.jpg?raw=true",
 		pics: [
@@ -103,14 +103,14 @@ const images = [
 				imgId: 2005,
 				imgUrl:
 					"https://github.com/michal-krawczyk10/mi-calles/blob/master/src/assets/img/landscapes/P1220119.jpg?raw=true",
-				imgDesc: "Torres dle Paine",
+				imgDesc: "Torres del Paine",
 				imgLocal: "Chile",
 			},
 			{
 				imgId: 2006,
 				imgUrl:
 					"https://github.com/michal-krawczyk10/mi-calles/blob/master/src/assets/img/landscapes/P1230250.jpg?raw=true",
-				imgDesc: "Los Glaciares",
+				imgDesc: "Los Glaciares National Park",
 				imgLocal: "Argentina",
 			},
 			{
@@ -138,7 +138,7 @@ const images = [
 				imgId: 2010,
 				imgUrl:
 					"https://github.com/michal-krawczyk10/mi-calles/blob/master/src/assets/img/landscapes/P1450335.jpg?raw=true",
-				imgDesc: "Peten Itza Lake",
+				imgDesc: "Lago Peten Itza",
 				imgLocal: "Guatemala",
 			},
 			{
@@ -169,7 +169,7 @@ const images = [
 		setName: "people",
 		setDesc: "how do we look like",
 		exampleImg:
-			"https://github.com/michal-krawczyk10/mi-calles/blob/master/src/assets/img/people/P1450646.jpg?raw=true",
+			"https://github.com/michal-krawczyk10/mi-calles/blob/master/src/assets/img/people/26.jpg?raw=true",
 		pics: [
 			{
 				imgId: 3001,
