@@ -45,7 +45,7 @@ export default {
     width: 70%;
   }
   @media screen and (max-width: 480px) {
-    width: 90%;
+    width: 80%;
   }
 }
 .item {
@@ -74,15 +74,19 @@ export default {
     justify-content: center;
     transition: 0.4s;
     border-radius: 8px;
+    @media screen and (max-width: 1024px) {
+      opacity: 0.75;
+      & > h3,
+      p {
+        color: #fff;
+      }
+    }
     &:hover {
-      background-color: var(--main);
       cursor: pointer;
       opacity: 0.85;
     }
-    &:hover > h3 {
-      color: #fff;
-    }
-    &:hover > p {
+    &:hover > h3,
+    p {
       color: #fff;
     }
   }
