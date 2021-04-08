@@ -30,7 +30,7 @@ $montserrat: "Montserrat", sans-serif;
   --montserrat: "Montserrat", sans-serif;
   --main: #440d3d;
   --lt-main: #e63462;
-  --op-main: #f6f8ff;
+  --op-main: #ffffff;
   // media queries
   // --xl: 1600px;
   // --lg: 1440px;
