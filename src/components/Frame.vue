@@ -38,6 +38,15 @@ export default {
   justify-content: center;
   flex-wrap: wrap-reverse;
   width: 80%;
+  @media screen and (max-width: 1024px) {
+    width: 90%;
+  }
+  @media screen and (max-width: 768px) {
+    width: 70%;
+  }
+  @media screen and (max-width: 480px) {
+    width: 90%;
+  }
 }
 .item {
   width: 40%;
@@ -48,9 +57,17 @@ export default {
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
+  @media screen and (max-width: 1024px) {
+    margin: 1rem;
+  }
+  @media screen and (max-width: 768px) {
+    width: 90%;
+  }
+
   &__textbox {
     height: 100%;
-    background-color: rgba(163, 163, 163, 0.246);
+    background-color: var(--main);
+    opacity: 0.1;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -58,8 +75,9 @@ export default {
     transition: 0.4s;
     border-radius: 8px;
     &:hover {
-      background-color: rgba(121, 121, 121, 0.876);
+      background-color: var(--main);
       cursor: pointer;
+      opacity: 0.85;
     }
     &:hover > h3 {
       color: #fff;

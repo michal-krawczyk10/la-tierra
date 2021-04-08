@@ -51,6 +51,7 @@ export default {
   @media screen and (max-width: 1024px) {
     width: 90vw;
   }
+
   &__container {
     display: flex;
     width: 100%;
@@ -64,6 +65,10 @@ export default {
     margin-right: 2rem;
     @media screen and (max-width: 1024px) {
       width: 100%;
+    }
+    @media screen and (min-width: 1440px) {
+      margin-left: 8rem;
+      margin-right: 4rem;
     }
   }
   &__textbox {

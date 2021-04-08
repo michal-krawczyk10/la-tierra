@@ -51,10 +51,10 @@ export default {
   width: 70vw;
   @media screen and (max-width: 1220px) {
     width: 80%;
-    margin: 1rem auto 0;
+    margin: 2rem auto 0;
   }
   @media screen and (max-width: 1024px) {
-    margin: 1rem auto 2rem;
+    margin: 2rem auto 2rem;
   }
 }
 .logo {
@@ -151,11 +151,14 @@ export default {
 .ham {
   position: absolute;
   top: 2rem;
-  right: 2rem;
+  right: 3rem;
   width: 60px;
   height: 48px;
   display: none;
   flex-direction: column;
+  @media screen and (max-width: 480px) {
+    right: 1rem;
+  }
   &__line {
     border: 4px solid var(--main);
     border-radius: 4px;
