@@ -48,14 +48,23 @@ export default {
 .pic {
   margin: auto;
   width: 80vw;
+  @media screen and (max-width: 1024px) {
+    width: 90vw;
+  }
   &__container {
     display: flex;
     width: 100%;
+    @media screen and (max-width: 1024px) {
+      flex-direction: column;
+    }
   }
   &__img {
     width: 70%;
     max-width: 800px;
     margin-right: 2rem;
+    @media screen and (max-width: 1024px) {
+      width: 100%;
+    }
   }
   &__textbox {
     width: 100%;
@@ -69,7 +78,7 @@ export default {
   }
   &__text {
     width: 100%;
-    text-align: justify;
+    text-align: left;
   }
 }
 .btn__random {
@@ -77,5 +86,8 @@ export default {
   width: 160px;
   align-self: flex-start;
   height: 2rem;
+  @media screen and (max-width: 1024px) {
+    align-self: center;
+  }
 }
 </style>

@@ -3,9 +3,7 @@
     <div class="logo">
       <router-link class="logo__box" to="/"
         ><h1 class="logo__title">la tierra</h1>
-        <h2 class="logo__subtitle">
-          pictures taken on planet Earth
-        </h2></router-link
+        <h2 class="logo__subtitle">pictures from Earth</h2></router-link
       >
     </div>
     <nav class="nav" id="nav" v-bind:class="{ nav__show: isActive }">
@@ -20,12 +18,11 @@
       <span class="ham__line"></span>
       <span class="ham__line"></span>
     </div>
-    <span
-      v-bind:class="{ background: isActive }"
-      @click="isActive = !isActive"
-    ></span>
   </header>
-  <GoBack />
+  <GoBack /><span
+    v-bind:class="{ background: isActive }"
+    @click="isActive = !isActive"
+  ></span>
 </template>
 
 <script>
@@ -57,12 +54,16 @@ export default {
     margin: 1rem auto 0;
   }
   @media screen and (max-width: 1024px) {
+    margin: 1rem auto 2rem;
   }
 }
 .logo {
   display: flex;
   flex-direction: column;
   width: 400px;
+  @media screen and (max-width: 768px) {
+    width: 240px;
+  }
   &__box {
     &:hover > * {
       color: var(--lt-main);
@@ -70,14 +71,21 @@ export default {
     &.router-link-exact-active > * {
       color: var(--lt-main);
     }
+    & > * {
+      color: var(--main);
+      @media screen and (max-width: 768px) {
+        font-size: 1.2rem;
+      }
+    }
   }
   &__title {
     text-align: left;
-    color: var(--main);
   }
   &__subtitle {
     text-align: center;
-    color: var(--main);
+    @media screen and (max-width: 768px) {
+      text-align: left;
+    }
   }
 }
 .nav {
@@ -132,11 +140,12 @@ export default {
   width: 100vh;
   height: 100vh;
   z-index: -10;
+  opacity: 0;
   @media screen and (max-width: 768px) {
     display: inline-block;
     z-index: 10;
     background: var(--lt-main);
-    opacity: 0.2;
+    opacity: 0.5;
   }
 }
 .ham {

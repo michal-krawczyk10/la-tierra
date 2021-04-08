@@ -82,7 +82,6 @@ img {
 }
 .btn {
   font-size: 1rem;
-  font-family: var(--paprika);
   background: var(--main);
   color: #fff;
   border: none;

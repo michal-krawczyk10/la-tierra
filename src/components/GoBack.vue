@@ -24,10 +24,16 @@ export default {
 </script>
 <style lang="scss" scoped>
 .back {
-  width: 60%;
+  width: 65%;
   margin: 0 auto 1rem;
   display: flex;
   justify-content: flex-end;
+  @media screen and (max-width: 1220px) {
+    width: 75%;
+  }
+  @media screen and (max-width: 768px) {
+    display: none;
+  }
 }
 .btn__back {
   justify-content: flex-end;

@@ -1,6 +1,6 @@
 <template>
   <section class="carousel">
-    <slot></slot
+    <slot><span class="img-cover"></span></slot
     ><span class="arrows">
       <span @click="next" class="arrow arrow__next"><ArrowRight /></span>
       <span @click="prev" class="arrow arrow__prev"><ArrowLeft /></span
