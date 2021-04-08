@@ -10,14 +10,19 @@
     </div>
     <nav class="nav" id="nav" v-bind:class="{ nav__show: isActive }">
       <router-link to="/randompic" @click="isActive = !isActive"
-        >random pic</router-link
+        >random photo</router-link
       >
       <span class="break">|</span>
       <router-link to="/about" @click="isActive = !isActive">about</router-link>
     </nav>
-    <span class="ham" @click="isActive = !isActive"
-      ><span class="ham__line"></span><span class="ham__line"></span
-      ><span class="ham__line"></span
+    <div class="ham" @click="isActive = !isActive">
+      <span class="ham__line"></span>
+      <span class="ham__line"></span>
+      <span class="ham__line"></span>
+    </div>
+    <span
+      v-bind:class="{ background: isActive }"
+      @click="isActive = !isActive"
     ></span>
   </header>
   <GoBack />
@@ -38,7 +43,7 @@ export default {
 
 <style lang="scss" scoped>
 * {
-  transition: 0.3s;
+  transition: 0.3s ease-in-out;
 }
 
 .header {
@@ -94,6 +99,7 @@ export default {
     color: var(--op-main);
     padding: 1em 0;
     border-radius: 0 0 0 16px;
+    z-index: 20;
   }
   & > a {
     text-align: center;
@@ -119,7 +125,24 @@ export default {
     }
   }
 }
+.background {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vh;
+  height: 100vh;
+  z-index: -10;
+  @media screen and (max-width: 768px) {
+    display: inline-block;
+    z-index: 10;
+    background: var(--lt-main);
+    opacity: 0.2;
+  }
+}
 .ham {
+  position: absolute;
+  top: 2rem;
+  right: 2rem;
   width: 60px;
   height: 48px;
   display: none;

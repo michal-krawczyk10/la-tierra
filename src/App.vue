@@ -56,8 +56,8 @@ body {
   font-size: 16px;
   display: flex;
   flex-direction: column;
-
   background: var(--op-main);
+  width: 100vw;
 }
 #app {
   display: flex;
