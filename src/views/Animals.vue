@@ -67,7 +67,6 @@ export default {
 </script>
 
 <style lang="scss" scoped>
-
 .container {
   display: flex;
   width: 80%;
@@ -89,5 +88,15 @@ export default {
 
 .textbox {
   margin: 0.5rem 0 0 72px;
+}
+
+img {
+  margin-left: 60px;
+  @media screen and (max-width: 1220px) {
+    margin-left: 50px;
+  }
+  @media screen and (max-width: 768px) {
+    margin-left: 0;
+  }
 }
 </style>

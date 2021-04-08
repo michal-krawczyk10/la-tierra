@@ -2,7 +2,7 @@
   <header class="header">
     <div class="logo">
       <router-link class="logo__box" to="/"
-        ><h1 class="logo__title">la tierra</h1>
+        ><h1 class="logo__title">la Tierra</h1>
         <h2 class="logo__subtitle">- pictures from Earth</h2></router-link
       >
     </div>

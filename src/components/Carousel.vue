@@ -46,7 +46,7 @@ export default {
   },
 };
 </script>
-<style lang="scss" >
+<style lang="scss" scoped>
 .carousel {
   position: relative;
   width: 920px;
@@ -122,13 +122,5 @@ export default {
     }
   }
 }
-img {
-  margin-left: 60px;
-  @media screen and (max-width: 1220px) {
-    margin-left: 50px;
-  }
-  @media screen and (max-width: 768px) {
-    margin-left: 0;
-  }
-}
+
 </style>
