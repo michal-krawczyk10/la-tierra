@@ -90,15 +90,11 @@ export default {
       color: #fff;
     }
   }
-  &__title {
-    margin: 1rem;
-    transition: 0.4s;
-    color: rgba(255, 255, 255, 0);
-  }
+  &__title,
   &__text {
+    font-size: 1.2rem;
     margin: 1rem;
     transition: 0.4s;
-    color: rgba(255, 255, 255, 0);
   }
 }
 </style>
