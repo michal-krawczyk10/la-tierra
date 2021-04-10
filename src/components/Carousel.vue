@@ -46,7 +46,7 @@ export default {
   },
 };
 </script>
-<style lang="scss" scoped>
+<style lang="scss">
 .carousel {
   position: relative;
   width: 920px;
@@ -96,7 +96,7 @@ export default {
     cursor: pointer;
   }
   &:hover svg path {
-    transition: 0.3s;
+    transition: 0.2s;
     fill: var(--lt-main);
   }
   &__next {
@@ -122,5 +122,4 @@ export default {
     }
   }
 }
-
 </style>

@@ -71,6 +71,7 @@ export default {
     display: flex;
     flex-direction: column;
     align-items: center;
+    text-align: center;
     justify-content: center;
     transition: 0.4s;
     border-radius: 8px;
