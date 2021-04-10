@@ -12,7 +12,8 @@
         <article class="slide">
           <img :src="slide.imgUrl" />
           <div class="textbox">
-            <h3>{{ slide.imgDesc }}</h3>
+            <h3>{{ slide.imgLocal }}</h3>
+
           </div>
         </article>
       </carousel-slide>
