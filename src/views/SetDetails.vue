@@ -1,4 +1,4 @@
-<!-- this doen't work, i'll leave it to find out why later on -->
+<!-- this doen't work, i'll leave it to deal with it later on -->
 
 <template>
   <section>

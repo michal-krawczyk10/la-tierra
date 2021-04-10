@@ -175,56 +175,56 @@ const images = [
 				imgId: 3001,
 				imgUrl:
 					"https://github.com/michal-krawczyk10/mi-calles/blob/master/src/assets/img/people/P1450646.jpg?raw=true",
-				imgDesc: "test pic 3001",
+				imgDesc: "",
 				imgLocal: "Guatemala",
 			},
 			{
 				imgId: 3002,
 				imgUrl:
 					"https://github.com/michal-krawczyk10/mi-calles/blob/master/src/assets/img/people/P1430547.jpg?raw=true",
-				imgDesc: "test pic 3002",
+				imgDesc: "",
 				imgLocal: "Malta",
 			},
 			{
 				imgId: 3003,
 				imgUrl:
 					"https://github.com/michal-krawczyk10/mi-calles/blob/master/src/assets/img/people/P1360112.jpg?raw=true",
-				imgDesc: "test pic 3003",
+				imgDesc: "",
 				imgLocal: "Peru",
 			},
 			{
 				imgId: 3004,
 				imgUrl:
 					"https://github.com/michal-krawczyk10/mi-calles/blob/master/src/assets/img/people/P1320007-2.jpg?raw=true",
-				imgDesc: "test pic 3004",
+				imgDesc: "",
 				imgLocal: "Bolivia",
 			},
 			{
 				imgId: 3005,
 				imgUrl:
 					"https://github.com/michal-krawczyk10/mi-calles/blob/master/src/assets/img/people/P1300718.jpg?raw=true",
-				imgDesc: "test pic 3005",
+				imgDesc: "",
 				imgLocal: "Bolivia",
 			},
 			{
 				imgId: 3006,
 				imgUrl:
 					"https://github.com/michal-krawczyk10/mi-calles/blob/master/src/assets/img/people/P1280241.jpg?raw=true",
-				imgDesc: "test pic 3006",
+				imgDesc: "",
 				imgLocal: "Chile",
 			},
 			{
 				imgId: 3007,
 				imgUrl:
 					"https://github.com/michal-krawczyk10/mi-calles/blob/master/src/assets/img/people/8.jpg?raw=true",
-				imgDesc: "test pic 3007",
+				imgDesc: "",
 				imgLocal: "Brazil",
 			},
 			{
 				imgId: 3008,
 				imgUrl:
 					"https://github.com/michal-krawczyk10/mi-calles/blob/master/src/assets/img/people/26.jpg?raw=true",
-				imgDesc: "test pic 3008",
+				imgDesc: "",
 				imgLocal: "Paraguay",
 			},
 		],
@@ -276,7 +276,7 @@ const images = [
 				imgUrl:
 					"https://github.com/michal-krawczyk10/mi-calles/blob/master/src/assets/img/cities/P1400734.jpg?raw=true",
 				imgDesc: "Panama",
-				imgLocal: "Panama",
+				imgLocal: "Panama City",
 			},
 			{
 				imgId: 4007,

@@ -1,6 +1,5 @@
 <template>
   <nav class="sidenav">
-    <router-link class="sidenav__item" to="/">Home</router-link>
     <router-link class="sidenav__item" to="/Animals">Animals</router-link>
     <router-link class="sidenav__item" to="/Landscapes">Landscapes</router-link>
     <router-link class="sidenav__item" to="/People">People</router-link>
