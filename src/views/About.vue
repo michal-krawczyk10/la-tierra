@@ -1,5 +1,5 @@
 <template>
-  <div class="about">
+  <section class="about">
     <p class="about__text">
       La Tierra, is the way Spanish speaking people call our planet. Others call
       it Zemlja, Chikyū, Talamh, Dünya, Pacha, Pământ etc.<br />Or Earth.
@@ -11,7 +11,7 @@
       page some of these scenes. So you can see our planet through my eyes.<br />Hope
       you'll enjoy your time here. :)
     </p>
-    <div class="about__contact">
+    <article class="about__contact">
       <h3 class="about__title">contact</h3>
       <p class="about__text">
         My name is Michał Krawczyk.<br />If you would like to contact me, fell
@@ -49,12 +49,13 @@
           <img alt="github link" src="@/assets/img/github.png" />
         </a>
       </div>
-    </div>
-  </div>
+    </article>
+  </section>
 </template>
 
 
 <style lang="scss" scoped>
+
 .about {
   width: 600px;
   margin: 2rem auto;

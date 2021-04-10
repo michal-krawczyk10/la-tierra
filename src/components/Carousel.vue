@@ -46,12 +46,12 @@ export default {
   },
 };
 </script>
-<style lang="scss">
+<style lang="scss" scoped>
 .carousel {
   position: relative;
   width: 920px;
   height: 740px;
-  overflow: hidden;
+  overflow-y: hidden;
   @media screen and (max-width: 1220px) {
     width: 740px;
   }

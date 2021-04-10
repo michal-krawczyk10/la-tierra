@@ -175,56 +175,56 @@ const images = [
 				imgId: 3001,
 				imgUrl:
 					"https://github.com/michal-krawczyk10/mi-calles/blob/master/src/assets/img/people/P1450646.jpg?raw=true",
-				imgDesc: "",
+				imgDesc: "Flores",
 				imgLocal: "Guatemala",
 			},
 			{
 				imgId: 3002,
 				imgUrl:
 					"https://github.com/michal-krawczyk10/mi-calles/blob/master/src/assets/img/people/P1430547.jpg?raw=true",
-				imgDesc: "",
+				imgDesc: "Marsaxlokk",
 				imgLocal: "Malta",
 			},
 			{
 				imgId: 3003,
 				imgUrl:
 					"https://github.com/michal-krawczyk10/mi-calles/blob/master/src/assets/img/people/P1360112.jpg?raw=true",
-				imgDesc: "",
+				imgDesc: "Arequipa",
 				imgLocal: "Peru",
 			},
 			{
 				imgId: 3004,
 				imgUrl:
 					"https://github.com/michal-krawczyk10/mi-calles/blob/master/src/assets/img/people/P1320007-2.jpg?raw=true",
-				imgDesc: "",
+				imgDesc: "Isla del Sol",
 				imgLocal: "Bolivia",
 			},
 			{
 				imgId: 3005,
 				imgUrl:
 					"https://github.com/michal-krawczyk10/mi-calles/blob/master/src/assets/img/people/P1300718.jpg?raw=true",
-				imgDesc: "",
+				imgDesc: "Sucre",
 				imgLocal: "Bolivia",
 			},
 			{
 				imgId: 3006,
 				imgUrl:
 					"https://github.com/michal-krawczyk10/mi-calles/blob/master/src/assets/img/people/P1280241.jpg?raw=true",
-				imgDesc: "",
+				imgDesc: "Iquique",
 				imgLocal: "Chile",
 			},
 			{
 				imgId: 3007,
 				imgUrl:
 					"https://github.com/michal-krawczyk10/mi-calles/blob/master/src/assets/img/people/8.jpg?raw=true",
-				imgDesc: "",
+				imgDesc: "Paraty",
 				imgLocal: "Brazil",
 			},
 			{
 				imgId: 3008,
 				imgUrl:
 					"https://github.com/michal-krawczyk10/mi-calles/blob/master/src/assets/img/people/26.jpg?raw=true",
-				imgDesc: "",
+				imgDesc: "Concepcion",
 				imgLocal: "Paraguay",
 			},
 		],
