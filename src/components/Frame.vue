@@ -67,7 +67,7 @@ export default {
   &__textbox {
     height: 100%;
     background-color: var(--main);
-    opacity: 0.1;
+    opacity: 0;
     display: flex;
     flex-direction: column;
     align-items: center;
