@@ -1,4 +1,4 @@
-# La Tierra  v 0.1
+# La Tierra v 0.1
 
 It is my personal photo gallery website, I am publishing here my own pictures I tooked all over the World.
 
@@ -21,4 +21,4 @@ I Hope you will apreciate both my photos and my coding skills. :)
 
 ## Link:
 
-Check the site here -> [https://michal-krawczyk10.github.io/mi-calles/#/](https://michal-krawczyk10.github.io/mi-calles/#/).
+Check the site here -> [https://michal-krawczyk10.github.io/la-tierra/#/](https://michal-krawczyk10.github.io/la-tierra/#/).
