@@ -51,7 +51,7 @@ export default {
   position: relative;
   width: 920px;
   height: 730px;
-  overflow-y: hidden;
+  overflow: hidden;
   @media screen and (max-width: 1220px) {
     width: 740px;
     max-height: 600px;

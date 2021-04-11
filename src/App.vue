@@ -31,7 +31,6 @@ $montserrat: "Montserrat", sans-serif;
   --main: #440d3d;
   --lt-main: #e63462;
   --op-main: #fbfbfb;
-
 }
 *,
 *:before,
@@ -42,6 +41,7 @@ $montserrat: "Montserrat", sans-serif;
   margin: 0;
   padding: 0;
   color: var(--main);
+  -webkit-tap-highlight-color: transparent;
 }
 
 body {

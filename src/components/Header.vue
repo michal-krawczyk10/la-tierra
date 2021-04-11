@@ -2,8 +2,15 @@
   <header class="header">
     <div class="logo">
       <router-link class="logo__box" to="/"
-        ><h1 class="logo__title">la Tierra</h1>
-        <h2 class="logo__subtitle">- pictures from Earth</h2></router-link
+        ><img
+          class="logo__img"
+          src="https://github.com/michal-krawczyk10/la-tierra/blob/master/src/assets/logo.png?raw=true"
+          alt="logo"
+        />
+        <div class="logo__text">
+          <h1 class="logo__title">la Tierra</h1>
+          <h2 class="logo__subtitle">pictures from Earth</h2>
+        </div></router-link
       >
     </div>
     <nav class="nav" id="nav" v-bind:class="{ nav__show: isActive }">
@@ -60,13 +67,23 @@ export default {
   }
 }
 .logo {
-  display: flex;
-  flex-direction: column;
   width: 400px;
   @media screen and (max-width: 768px) {
     width: 240px;
   }
   &__box {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+  }
+  &__img {
+    width: 100px;
+    margin-right: 1rem;
+    @media screen and (max-width: 768px) {
+      width: 64px;
+    }
+  }
+  &__text {
     &:hover > * {
       color: var(--lt-main);
     }
@@ -84,10 +101,13 @@ export default {
     text-align: left;
   }
   &__subtitle {
-    text-align: center;
+    text-align: left;
     @media screen and (max-width: 768px) {
       text-align: left;
       font-size: 1rem;
+    }
+    @media screen and (max-width: 350px) {
+      display: none;
     }
   }
 }
@@ -154,7 +174,7 @@ export default {
 }
 .ham {
   position: absolute;
-  top: 2rem;
+  top: 2.4rem;
   right: 3rem;
   width: 60px;
   height: 48px;

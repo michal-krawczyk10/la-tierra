@@ -18,3 +18,9 @@ export default {
   name: "ArrowLeft",
 };
 </script>
+<style lang="scss">
+svg:hover > path {
+  transition: 0.3s;
+  fill: var(--lt-main);
+}
+</style>
