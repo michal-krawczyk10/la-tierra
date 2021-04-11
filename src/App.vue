@@ -31,11 +31,7 @@ $montserrat: "Montserrat", sans-serif;
   --main: #440d3d;
   --lt-main: #e63462;
   --op-main: #fbfbfb;
-  // media queries
-  // --xl: 1600px;
-  // --lg: 1440px;
-  // --md: 1024px;
-  // --sm: 768px;
+
 }
 *,
 *:before,
@@ -46,7 +42,6 @@ $montserrat: "Montserrat", sans-serif;
   margin: 0;
   padding: 0;
   color: var(--main);
-
 }
 
 body {
@@ -58,7 +53,6 @@ body {
   display: flex;
   flex-direction: column;
   background: var(--op-main);
-  
   overflow-x: hidden;
 }
 #app {

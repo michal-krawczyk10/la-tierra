@@ -1,19 +1,9 @@
-# photo_portfolio
+# La Tierra
 
-## Project setup
-```
-npm install
-```
+It is my personal photo gallery website, I will publish here my own pictures. 
 
-### Compiles and hot-reloads for development
-```
-npm run serve
-```
+Also it is my first website I am making using Vue3.
 
-### Compiles and minifies for production
-```
-npm run build
-```
+Hope you will apreciate both my photos and my coding skills. :)
 
-### Customize configuration
-See [Configuration Reference](https://cli.vuejs.org/config/).
+Check it here: [Configuration Reference](https://michal-krawczyk10.github.io/mi-calles/#/).

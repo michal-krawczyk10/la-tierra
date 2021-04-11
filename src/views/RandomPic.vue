@@ -10,7 +10,7 @@
         <h3 class="pic__loc">{{ location }}</h3>
         <p class="pic__text">{{ desc }}</p>
         <button class="btn btn__random" v-on:click="anotherImg()">
-          another photo
+          draw another
         </button>
       </div>
     </div>

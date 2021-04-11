@@ -50,10 +50,11 @@ export default {
 .carousel {
   position: relative;
   width: 920px;
-  height: 740px;
+  height: 730px;
   overflow-y: hidden;
   @media screen and (max-width: 1220px) {
     width: 740px;
+    max-height: 600px;
   }
   @media screen and (max-width: 768px) {
     width: 80%;
