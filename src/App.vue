@@ -58,7 +58,7 @@ body {
   display: flex;
   flex-direction: column;
   background: var(--op-main);
-  width: 100vw;
+  
   overflow-x: hidden;
 }
 #app {

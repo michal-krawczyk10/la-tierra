@@ -100,7 +100,7 @@ export default {
   @media screen and (max-width: 768px) {
     flex-direction: column;
     align-items: flex-end;
-    position: absolute;
+    position: fixed;
     top: 0;
     right: -200px;
     width: 200px;
