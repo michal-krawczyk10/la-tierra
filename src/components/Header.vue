@@ -7,6 +7,8 @@
       >
     </div>
     <nav class="nav" id="nav" v-bind:class="{ nav__show: isActive }">
+      <router-link to="/" @click="isActive = !isActive">home</router-link
+      ><span class="break">|</span>
       <router-link to="/randompic" @click="isActive = !isActive"
         >random photo</router-link
       >
@@ -138,15 +140,16 @@ export default {
   position: fixed;
   top: 0;
   left: 0;
-  width: 100vh;
+  width: 100vw;
   height: 100vh;
   z-index: -10;
   opacity: 0;
+  transition: 0.2s ease-in;
   @media screen and (max-width: 768px) {
     display: inline-block;
     z-index: 10;
     background: var(--lt-main);
-    opacity: 0.5;
+    opacity: 0.4;
   }
 }
 .ham {

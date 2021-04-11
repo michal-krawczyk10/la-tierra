@@ -80,10 +80,16 @@ export default {
   &__loc {
     width: 100%;
     margin: 1rem 0;
+    @media screen and (max-width: 1024px) {
+      margin: 1rem 0 0 1rem;
+    }
   }
   &__text {
     width: 100%;
     text-align: left;
+    @media screen and (max-width: 1024px) {
+      margin: 0 0 0 1rem;
+    }
   }
 }
 .btn__random {
