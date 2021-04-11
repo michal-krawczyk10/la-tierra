@@ -1,4 +1,4 @@
-# La Tierra v 0.1
+# La Tierra v. 0.1
 
 It is my personal photo gallery website, I am publishing here my own pictures I tooked all over the World.
 
