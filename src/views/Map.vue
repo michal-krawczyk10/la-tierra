@@ -4,24 +4,30 @@
   <SideNav />
   <section>
     <h1>map</h1>
-    <div id="map"></div>
+    <MglMap :accessToken="accessToken" :mapStyle="mapStyle" />
   </section>
 </template>
 
 <script>
 // @ is an alias to /src
+import Mapbox from "mapbox-gl";
+import { MglMap } from "vue-mapbox";
 
 export default {
   name: "Map",
-  components: {},
+  components: {
+    MglMap,
+  },
+  data() {
+    return {
+      accessToken: ACCESS_TOKEN, // your access token. Needed if you using Mapbox maps
+      mapStyle: MAP_STYLE, // your map style
+    };
+  },
+
+  created() {
+    // We need to set mapbox-gl library here in order to use it in template
+    this.mapbox = Mapbox;
+  },
 };
-
-// var mapboxgl = require("mapbox-gl/dist/mapbox-gl.js");
-
-// mapboxgl.accessToken =
-//   "pk.eyJ1IjoicGl6bWFra3VuIiwiYSI6ImNrbGEwOWtoYTAwdGQyd3M0dGdvNG0ydWYifQ.pyXyUpkq0hMlGHAFd9LY5Q";
-// var map = new mapboxgl.Map({
-//   container: "map",
-//   style: "mapbox://styles/mapbox/streets-v11",
-// });
 </script>
