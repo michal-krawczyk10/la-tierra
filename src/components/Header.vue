@@ -15,7 +15,9 @@
     </div>
     <nav class="nav" id="nav" v-bind:class="{ nav__show: isActive }">
       <router-link to="/" @click="isActive = !isActive">home</router-link
-      ><span class="break">|</span>
+      ><span class="break">|</span
+      ><router-link to="map" @click="isActive = !isActive">map</router-link>
+      <span class="break">|</span>
       <router-link to="/randompic" @click="isActive = !isActive"
         >random photo</router-link
       >
